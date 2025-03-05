@@ -1,0 +1,183 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$comment": "Version 1.0",
+    "properties": {
+        "Payments": {
+            "items": { 
+                "properties": {
+                    "amount": {
+                        "type": "string"
+                    },
+                    "clearingProvider": {
+                        "type": "string"
+                    },
+                    "paymentMethod": {
+                        "type": "string"
+                    },
+                    "paymentServiceProvider": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "amount",
+                    "clearingProvider",
+                    "paymentMethod",
+                    "paymentServiceProvider"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "countryCode": {
+            "type": "string"
+        },
+        "currency": {
+            "type": "string"
+        },
+        "deliveryDate": {
+            "type": "string"
+        },
+        "deliveryServiceProvider": {
+            "type": "string"
+        },
+        "deliveryTime": {
+            "type": "string"
+        },
+        "entity": {
+            "type": "string"
+        },
+        "expectedDeliveryDate": {
+            "type": "string"
+        },
+        "glovoOrderId": {
+            "type": "string"
+        },
+        "items": {
+            "properties": {
+                "condition": {
+                    "items": {
+                        "properties": {
+                            "conditionType": {
+                                "enum": [
+                                    "netTotalOrderValue",
+                                    "grossTotalOrderValue",
+                                    "netFoodValue",
+                                    "grossFoodValue",
+                                    "netTipValue",
+                                    "grossTipValue",
+                                    "netServiceFee",
+                                    "grossServiceFee",
+                                    "netDeliveryFee",
+                                    "grossDeliveryFee",
+                                    "netDeliveryFeeMarketplace",
+                                    "grossDeliveryFeeMarketplace",
+                                    "netAdditionalChargeBadWeather",
+                                    "grossAdditionalChargeBadWeather",
+                                    "netAdditionalChargeBadWeatherMarketplace",
+                                    "grossAdditionalChargeBadWeatherMarketplace",
+                                    "netAdditionalChargeMinBasket",
+                                    "grossAdditionalChargeMinBasket",
+                                    "netAdditionalChargeMinBasketMarketplace",
+                                    "grossAdditionalChargeMinBasketMarketplace",
+                                    "netAgentModelRevenue",
+                                    "grossAgentModelRevenue",
+                                    "netCpo",
+                                    "grossCpo",
+                                    "vats",
+                                    "netPartnerVoucher",
+                                    "grossPartnerVoucher",
+                                    "netPlatformVoucher",
+                                    "grossPlatformVoucher",
+                                    "netPlatformDiscount",
+                                    "grossPlatformDiscount",
+                                    "netPartnerDiscount",
+                                    "grossPartnerDiscount",
+                                    "netPartnerDiscountNoCommission",
+                                    "grossPartnerDiscountNoCommission",
+                                    "netDeliveryFeeDiscountPlatform",
+                                    "grossDeliveryFeeDiscountPlatform",
+                                    "netBadWeatherDiscountPlatform",
+                                    "grossBadWeatherDiscountPlatform",
+                                    "netMinBasketDiscountPlatform",
+                                    "grossMinBasketDiscountPlatform",
+                                    "netServiceFeeDiscountPlatform",
+                                    "grossServiceFeeDiscountPlatform",
+                                    "netDeliveryFeeDiscountVendor",
+                                    "grossDeliveryFeeDiscountVendor",
+                                    "netDeliveryFeeDiscountTotal",
+                                    "grossDeliveryFeeDiscountTotal",
+                                    "productsAdvancedInCash",
+                                    "serviceFeeCashMarketplace",
+                                    "netWaitingTimeFee",
+                                    "costOfIncidents",
+                                    "courierDeliveryFee",
+                                    "netWaitingTimeFeeRefund",
+                                    "commissionableValue",
+                                    "costOfIncidentsAffectingCommission",
+                                    "incidentCommissionableValue",
+                                    "paymentProcessingFee"
+                                ],
+                                "type": "string"
+                            },
+                            "conditionValue": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "conditionType",
+                            "conditionValue"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "orderCity": {
+            "type": "string"
+        },
+        "orderDate": {
+            "type": "string"
+        },
+        "orderId": {
+            "type": "string"
+        },
+        "orderTime": {
+            "type": "string"
+        },
+        "paymentProvider": {
+            "type": "string"
+        },
+        "restaurantId": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "timestamp": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "Payments",
+        "countryCode",
+        "currency",
+        "deliveryDate",
+        "deliveryServiceProvider",
+        "deliveryTime",
+        "entity",
+        "expectedDeliveryDate",
+        "glovoOrderId",
+        "items",
+        "orderCity",
+        "orderDate",
+        "orderId",
+        "orderTime",
+        "paymentProvider",
+        "restaurantId",
+        "status",
+        "timestamp"
+    ],
+    "type": "object"
+}
